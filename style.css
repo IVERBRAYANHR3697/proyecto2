@@ -1,0 +1,176 @@
+:root {    
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+--Font-size-paragraph: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+button {
+    border-color: hsl(0, 0%, 100%);
+    color: hsl(228, 45%, 44%);
+    background-color: hsl(217, 54%, 11%);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+body {
+    font-family: 'Outfit', sans-serif;    
+}
+
+main {
+    width: 100%;  
+    height: 100%;  
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card {
+    width: 320px;     
+    border-radius: 20px;
+    background-color: var(--Very-dark-blue-card-BG);
+    display: grid;
+    flex-direction: column; 
+}
+
+.card-equilibrium-img {
+    width: 270px;
+    border-radius: 20px;
+    margin-top: 28px;
+    margin-bottom: 20px; 
+    justify-self: center;
+    z-index: 2;             
+}
+
+.card-equilibrium-img:hover {
+    cursor: pointer;
+    opacity: 0.2;
+} 
+
+.card-view {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    opacity: 0.7;
+    background-color: var(--Cyan);    
+    border-radius: 20px;
+    margin-top: 28px;
+    margin-bottom: 20px; 
+    justify-self: center;
+    display: grid;    
+}
+
+.card-view-img {
+    place-self: center;
+}
+
+.card h1 {
+    font-size: 20px; 
+    color: var(--White);
+    margin: 0 24px ;  
+    margin-bottom: 20px;   
+}
+
+.card h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+p {
+    font-size: 16px;
+    color: var(--Soft-blue);
+    font-weight: 300;
+    margin: 0 24px ;
+    margin-bottom: 20px;
+}
+
+.card-caracteristics{
+    margin: 0 24px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-caracteristics-icon {
+    display: flex;
+    justify-content: space-between;    
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+
+.card-price {
+    display: flex;
+    align-items: center;        
+}
+
+.card-price span {
+    margin-left: 8px;
+    color: var(--Cyan);
+}
+
+.card-daysleft{
+    display: flex;
+    align-items: center;
+}
+
+.card-daysleft span {
+    margin-left: 8px;
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+.card-avatar{    
+    height: 30px;   
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;       
+}
+
+
+.card-avatar img {
+    height: 100%;
+    margin-right: 10px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.card-avatar p {
+    margin: 0;
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+.card-avatar span {
+    color: var(--White);
+}
+
+.card-avatar span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+} 
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    position:absolute;
+    bottom: 0;    
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
